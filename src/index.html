@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="w-full bg-gray-200">
+  <header class="w-full p-4 md:w-98 m-auto md:p-0 mt-5">
+    <section class="w-80 m-auto bg-white  rounded-lg flex p-3 justify-center items-center shadow-lg md:w-98">
+      <img src="https://placehold.co/70x70" alt="photo" class="mx-3 md:w-28">
+      <p class="flex flex-col text-base md:text-2xl font-semibold">
+        VICTOR
+        <span class="font-bold text-lg md:text-3xl border-b-2 border-b-black">CUAXILOA</span>
+      </p>
+    </section>
+
+    <section class="w-80 m-auto  my-6 bg-white rounded-lg border-t-8 border-green-800 p-4 md:w-98">
+      <div class="border-b border-gray-400">
+        <h2 class="text-3xl font-semibold">PADRÓN <span class="text-2xl">2024</span></h2>
+        <ul class="list-disc text-lg p-5 ml-5">
+          <li class="">TOMAR FOTO DE SU INE POR AMBOS LADOS</li>
+          <li>TOMAR FOTO DE LA PERSONA QUE SE REGISTRA</li>
+        </ul>
+      </div>
+      <p class="text-red-500 text-base my-4">* indica que la pregunta es obligatoria</p>
+    </section>
+  </header>
+
+  <main class="w-full mb-5 m-auto md:w-98">
+    <form action="" class="w-80 m-auto md:w-98">
+
+      <div class="card">
+        <label for="email" class="cardTitle">CORREO <span class="text-red-500">*</span></label>
+        <input type="email" id="email" placeholder="Tu dirección de correo electrónico" class="cardInput" required name="email" value="<?= set_value('email') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('email') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="  'electoralSection" class="cardTitle">SECCIÓN ELECTORAL <span class="text-red-500">*</span></label>
+        <input type="text" id="  'electoralSection" placeholder="Tu respuesta" class="cardInput" required name="electoralSection" value="<?= set_value('electoralSection') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('electoralSection') ?></p>
+      </div>
+
+
+      <div class="cardLarge">
+        <label for="'frontCredentialPhoto" class="cardTitle">FOTO INE FRONTAL <span class="text-red-500">*</span></label>
+        <input type="file" name="'frontCredentialPhoto" required value="<?= set_value('frontCredentialPhoto') ?>" >
+        <p class="text-sm text-red-500"><?= validation_show_error('frontCredentialPhoto') ?></p>
+      </div>
+
+      <div class="cardLarge">
+        <label for="'backCredentialPhoto" class="cardTitle">FOTO INE  DE LA PARTE DE ATRAS <span class="text-red-500">*</span></label>
+        <input type="file" name="'backCredentialPhoto" required value="<?= set_value('backCredentialPhoto') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('backCredentialPhoto') ?></p>
+      </div>
+
+      <div class="cardLarge">
+        <label for="photoPerson" class="cardTitle">FOTO DE LA PERSONA QUE SE REGISTRA <span class="text-red-500">*</span></label>
+        <input type="file" name="photoPerson" required value="<?= set_value('photoPerson') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('photoPerson') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="lastName" class="cardTitle">APELLIDO PATERNO<span class="text-red-500">*</span></label>
+        <input type="text" id="lastName" placeholder="Tu respuesta" class="cardInput" required name="lastName" value="<?= set_value('lastName') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('lastName') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="secondLastName" class="cardTitle">APELLIDO MATERNO<span class="text-red-500">*</span></label>
+        <input type="text" id="secondLastName" placeholder="Tu respuesta" class="cardInput" name="secondLastName" required value="<?= set_value('secondLastName') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('secondLastName') ?></p>
+      </div>
+      
+      <div class="card">
+        <label for="name" class="cardTitle">NOMBRE <span class="text-red-500">*</span></label>
+        <input type="text" id="name" placeholder="Tu respuesta" class="cardInput" required name="name"  value="<?= set_value('name') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('name') ?></p>
+      </div>
+      
+      <div class="cardLarge">
+        <label for="community" class="cardTitle">JUNTA AUXILIAR, COLONIA O INSPECTORIA <span class="text-red-500">*</span></label>
+        <input type="text" id="community" placeholder="Tu respuesta" class="cardInput" required name="community" value="<?= set_value('community') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('community') ?></p>
+      </div>
+
+      <div class="cardLarge">
+        <label for="address" class="cardTitle">DIRECCIÓN (calle y numero) <span class="text-red-500">*</span></label>
+        <input type="text" id="address" placeholder="Tu respuesta" class="cardInput" required name="address" value="<?= set_value('address') ?>" >
+        <p class="text-sm text-red-500"><?= validation_show_error('address') ?></p>
+      </div>
+
+      <div class="cardLarge">
+        <label for="phone" class="cardTitle">TELÉFONO (10 dígitos sin espacios) <span class="text-red-500">*</span></label>
+        <input type="text" id="phone" placeholder="Tu respuesta" class="cardInput" required name="phone" value="<?= set_value('phone') ?>" >
+        <p class="text-sm text-red-500"><?= validation_show_error('phone') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="facebook" class="cardTitle">PERFIL DE FACEBOOK</label>
+        <input type="text" id="facebook" placeholder="Tu respuesta" class="cardInput" name="facebook" value="<?= set_value('facebook') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('facebook') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="instagram" class="cardTitle">PERFIL DE INSTAGRAM</label>
+        <input type="text" id="instagram" placeholder="Tu respuesta" class="cardInput" name="instagram" value="<?= set_value('instagram') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('instagram') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="tiktok" class="cardTitle">PERFIL DE TIK TOK</label>
+        <input type="text" id="tiktok" placeholder="Tu respuesta" class="cardInput" name="tiktok" value="<?= set_value('tiktok') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('tiktok') ?></p>
+      </div>
+
+      <div class="card">
+        <label for="twitter" class="cardTitle">PERFIL DE TWITTER</label>
+        <input type="text" id="twitter" placeholder="Tu respuesta" class="cardInput" name="twitter" value="<?= set_value('twitter') ?>">
+        <p class="text-sm text-red-500"><?= validation_show_error('twitter') ?></p>
+      </div>
+
+      <div class="w-full flex justify-between p-2">
+        <button type="submit" class="bg-green-900 text-white w-28 p-2 rounded-lg text-lg font-semibold">Enviar</button>
+        <button type="reset" class="text-green-900 font-semibold">Borrar formulario</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>

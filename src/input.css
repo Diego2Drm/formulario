@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-white w-full h-40 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-98
+}
+.cardLarge{
+    @apply bg-white w-full h-60 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-98
+}
+.cardTitle{
+    @apply text-xl font-bold  flex my-4
+}
+.cardInput{
+    @apply p-2 border-b border-gray-100  outline-none focus:border-b-2 border-b-green-900
+}
