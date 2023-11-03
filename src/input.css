@@ -2,15 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FORULARIO */
 .card{
-    @apply bg-white w-full h-40 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-98
+    @apply bg-white w-full h-40 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-130
 }
 .cardLarge{
-    @apply bg-white w-full h-60 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-98
+    @apply bg-white w-full h-60 flex flex-col p-7 border-2 border-gray-300 rounded-lg my-3 md:w-130
 }
 .cardTitle{
     @apply text-xl font-bold  flex my-4
 }
 .cardInput{
-    @apply p-2 border-b border-gray-100  outline-none focus:border-b-2 border-b-green-900
+    @apply p-2 border-b border-gray-300  outline-none transition transition-all focus:ease-linear focus:duration-100 focus:border-b-2 focus:border-b-green-900 
+}
+
+.btnEnviar:hover{
+    @apply transition transition-all duration-200 ease-in-out transform scale-110 bg-green-700
+}
+
+/* PAG. TABLE */
+.inactive{
+    display: none;
+}
+.submenu{
+    @apply flex justify-between items-center cursor-pointer hover:bg-colorHover lg:w-64  h-9 rounded-lg p-2
+}
+.submenuItems{
+    @apply flex items-center
+}
+.submenuItems p{
+    @apply ml-4 font-bold
+}
+.submenulist{
+    @apply pt-2 pl-10  space-y-2
+}
+.bi-chevron-down--up{
+    transform: rotateX(180deg);
+}
+.submenulist li a{
+    @apply w-56 inline-block pl-2 rounded-lg h-10 flex items-center
+}
+.submenulist li:hover > a{
+    @apply bg-colorHover
+}
+
+#profile li{
+    @apply lg:w-64 rounded-lg p-2
+}
+#profile li:hover{
+    @apply bg-colorHover 
+}
+tbody tr:hover{
+    @apply bg-colorHover
+}
+th, td{
+    @apply border-2 border-gray-200 p-4
+}
+.desktop{
+    @apply lg:w-72 lg:flex lg:bg-inherit
+}
+.aside--bar{
+    @apply h-full lg:w-full lg:mt-[75px]  md:w-80 
+}
+#profile{
+    @apply md:w-72
 }

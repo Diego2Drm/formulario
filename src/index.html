@@ -9,8 +9,8 @@
 </head>
 
 <body class="w-full bg-gray-200">
-  <header class="w-full p-4 md:w-98 m-auto md:p-0 mt-5">
-    <section class="w-80 m-auto bg-white  rounded-lg flex p-3 justify-center items-center shadow-lg md:w-98">
+  <header class="w-full p-4 md:w-130 m-auto md:p-0 mt-5">
+    <section class="w-80 m-auto bg-white  rounded-lg flex p-3 justify-center items-center shadow-lg md:w-130">
       <img src="https://placehold.co/70x70" alt="photo" class="mx-3 md:w-28">
       <p class="flex flex-col text-base md:text-2xl font-semibold">
         VICTOR
@@ -18,7 +18,7 @@
       </p>
     </section>
 
-    <section class="w-80 m-auto  my-6 bg-white rounded-lg border-t-8 border-green-800 p-4 md:w-98">
+    <section class="w-80 m-auto  my-6 bg-white rounded-lg border-t-8 border-green-800 p-4 md:w-130">
       <div class="border-b border-gray-400">
         <h2 class="text-3xl font-semibold">PADRÓN <span class="text-2xl">2024</span></h2>
         <ul class="list-disc text-lg p-5 ml-5">
@@ -30,8 +30,8 @@
     </section>
   </header>
 
-  <main class="w-full mb-5 m-auto md:w-98">
-    <form action="" class="w-80 m-auto md:w-98">
+  <main class="w-full mb-5 m-auto md:w-130">
+    <form action="" class="w-80 m-auto md:w-130">
 
       <div class="card">
         <label for="email" class="cardTitle">CORREO <span class="text-red-500">*</span></label>
@@ -82,19 +82,19 @@
         <p class="text-sm text-red-500"><?= validation_show_error('name') ?></p>
       </div>
       
-      <div class="cardLarge">
+      <div class="card">
         <label for="community" class="cardTitle">JUNTA AUXILIAR, COLONIA O INSPECTORIA <span class="text-red-500">*</span></label>
         <input type="text" id="community" placeholder="Tu respuesta" class="cardInput" required name="community" value="<?= set_value('community') ?>">
         <p class="text-sm text-red-500"><?= validation_show_error('community') ?></p>
       </div>
 
-      <div class="cardLarge">
+      <div class="card">
         <label for="address" class="cardTitle">DIRECCIÓN (calle y numero) <span class="text-red-500">*</span></label>
         <input type="text" id="address" placeholder="Tu respuesta" class="cardInput" required name="address" value="<?= set_value('address') ?>" >
         <p class="text-sm text-red-500"><?= validation_show_error('address') ?></p>
       </div>
 
-      <div class="cardLarge">
+      <div class="card">
         <label for="phone" class="cardTitle">TELÉFONO (10 dígitos sin espacios) <span class="text-red-500">*</span></label>
         <input type="text" id="phone" placeholder="Tu respuesta" class="cardInput" required name="phone" value="<?= set_value('phone') ?>" >
         <p class="text-sm text-red-500"><?= validation_show_error('phone') ?></p>
@@ -125,8 +125,8 @@
       </div>
 
       <div class="w-full flex justify-between p-2">
-        <button type="submit" class="bg-green-900 text-white w-28 p-2 rounded-lg text-lg font-semibold">Enviar</button>
-        <button type="reset" class="text-green-900 font-semibold">Borrar formulario</button>
+        <button type="submit" class="bg-green-900 text-white w-28 p-2 rounded-lg text-lg font-semibold  btnEnviar"">Enviar</button>
+        <button type="reset" class="text-green-900 font-semibold hover:bg-gray-300 p-2">Borrar formulario</button>
       </div>
 
     </form>
