@@ -15,7 +15,7 @@ module.exports = {
         'borderColor': '#e5e7eb',
         'backAside': '#f3f4f6',
         'colorHover': '#1118271a',
-        'colorThead': '#f9fafb'
+        'colorThead': '#f9fafb',
       }),
     },
   },
