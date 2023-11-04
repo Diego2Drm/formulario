@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Table</title>
   <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./page.css">
 
 </head>
 
@@ -57,7 +58,7 @@
                     </svg></span>
                 </div>
                 <ul id="accountList" class="submenulist inactive">
-                  <li><a href="">Settings</a></li>
+                  <li><a href="./customerDetail.html">Settings</a></li>
                   <li><a href="">lorem.</a></li>
                   <li><a href="">lorem.</a></li>
                 </ul>
@@ -137,7 +138,7 @@
     </nav>
   </header>
 
-  <main class="w-full lg:pl-64 pt-12 ">
+  <main class="w-full lg:pl-64 pt-12 lg:h-screen">
     <section class="w-80 mx-auto mt-5 bg-white rounded-xl p-4 md:w-11/12">
       <div>
         <h1>Título</h1>
@@ -147,7 +148,7 @@
         <h2 class="mt-5">Sub Título</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo non.</p>
         <div class="w-full flex justify-end m-4">
-          <button type="button" class="border-2 text-center p-2 font-semibold w-28 flex items-center justify-center rounded-md cursor-pointer shadow-md hover:bg-gray-300">
+          <button type="button" class="border-2 text-center p-2 font-semibold w-28 flex items-center justify-center rounded-md cursor-pointer shadow-md hover:bg-[#2f7d32] hover:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down mr-2" viewBox="0 0 16 16">
               <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
               <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
@@ -352,6 +353,23 @@
         </table>
       </div>
 
+    </section>
+
+    <section class="page__nav">
+      <nav>
+        <ul class="pager">
+          <li class="disabled">
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">Newer</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/personas?page=2" aria-label="Next">
+              <span aria-hidden="true">Older</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </main>
 
