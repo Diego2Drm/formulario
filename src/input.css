@@ -67,3 +67,11 @@ th, td{
 #profile{
     @apply md:w-72
 }
+
+/* CUSTOMER DETAIL */
+.user-info{
+    @apply flex flex-col space-y-2 font-semibold text-lg
+}
+.user-info span {
+    @apply text-gray-600 font-normal
+}
